@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font: normal 100%/1.5 "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -9,25 +9,42 @@ html {
 
 h2 {
   font-size: 4rem;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 5);
+  line-height: 1.4;
+  margin: 0 0 1rem;
+}
+
+span {
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
 }
 
 p {
   font-size: 2rem;
   font-style: italic;
+  margin: 0;
 }
 
 .banner {
-  position: absolute;
-  max-width: 50em;
+  position: relative;
   max-height: 500px;
+  overflow: hidden;
 }
 
 .banner-content {
-  position: relative;
+  padding: 0 1.5rem;
+  position: absolute;
+  max-width: 50em;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.5rem;
 }
+
 .img-flex {
   display: block;
   width: 100%;
+}
+
+body {
+  margin: 0;
 }
